@@ -1,0 +1,281 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* لوحة الترحيب */
+.welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 1s ease;
+}
+
+.welcome-text {
+    color: #f00;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* البطاطا */
+.bat {
+    position: fixed;
+    font-size: 30px;
+    animation: fly 10s linear infinite;
+}
+
+.bat-1 {
+    top: 10px;
+    left: 10px;
+}
+
+.bat-2 {
+    top: 50px;
+    left: 150px;
+}
+
+.bat-3 {
+    top: 100px;
+    left: 300px;
+}
+
+.bat-4 {
+    top: 150px;
+    left: 450px;
+}
+
+.bat-5 {
+    top: 200px;
+    left: 600px;
+}
+
+.bat-6 {
+    top: 250px;
+    left: 750px;
+}
+
+.bat-7 {
+    top: 300px;
+    left: 900px;
+}
+
+/* حركة البطاطا */
+@keyframes fly {
+    0% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-30px) rotate(45deg); }
+    100% { transform: translateY(0) rotate(0); }
+}
+
+/* المحتوى الرئيسي */
+.container {
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* الأزرار الاجتماعية */
+.social-buttons button {
+    background-color: #f00;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-buttons button:hover {
+    background-color: #b30000;
+    transform: scale(1.1);
+}
+
+/* قائمة المهارات */
+.skills-list {
+    font-size: 20px;
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.skills-list h3 {
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+/* التأثيرات على صفحة الترحيب */
+.animated-box {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* اللون الأسود */
+    color: #fff; /* النص باللون الأبيض */
+}
+
+/* Profile and Buttons */
+.profile {
+    text-align: center;
+    margin: 20px;
+    color: #f44336; /* اللون الأحمر */
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #f44336; /* إضافة حد أحمر حول الصورة */
+    transition: transform 0.3s ease; /* حركة عند التحويم على الصورة */
+}
+
+.profile-image:hover {
+    transform: scale(1.1); /* تكبير الصورة عند التحويم */
+}
+
+h1, h2 {
+    color: #f44336; /* اللون الأحمر */
+}
+
+/* Social buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #333; /* خلفية داكنة */
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* تأثيرات التحويل */
+}
+
+button i {
+    margin-right: 8px;
+}
+
+button:hover {
+    background-color: #f44336; /* تغيير اللون إلى الأحمر عند التحويم */
+    transform: scale(1.1); /* تكبير الزر */
+}
+
+/* Comment Section Styling */
+.comment-section {
+    margin-top: 40px;
+    background-color: #1a1a1a; /* خلفية داكنة */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 1s ease-out; /* تأثير حركة ظهور للمربع */
+}
+
+/* Animation for Fade In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.comment-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f44336; /* حد أحمر حول مربع النص */
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 16px;
+    background-color: #333; /* خلفية داكنة للمربع */
+    color: #fff;
+}
+
+.submit-button {
+    background-color: #f44336; /* اللون الأحمر */
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* تأثير التحويل */
+}
+
+.submit-button:hover {
+    background-color: #d32f2f; /* ظلال حمراء داكنة عند التحويم */
+    transform: scale(1.1); /* تكبير الزر عند التحويم */
+}
+
+/* Add animation to buttons */
+button, .submit-button {
+    animation: slideIn 0.5s ease-in-out; /* حركة انزلاق للأزرار */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .social-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
