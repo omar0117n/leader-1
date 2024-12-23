@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #1a1a2e;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #00aaff;
+}
+
+/* Welcome Section */
+.welcome {
+    background-color: #0f3460;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.welcome h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #ffffff;
+    animation: fadeIn 3s infinite alternate;
+}
+
+.welcome img {
+    max-width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.welcome .animated-text {
+    font-size: 24px;
+    color: #00aaff;
+    animation: slideIn 4s infinite alternate;
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Main Section */
+main {
+    padding: 100px 20px; /* لإضافة مساحة أسفل القائمة الثابتة */
+}
+
+main .content h1 {
+    color: #00aaff;
+}
+
+main .content ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+main .content form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+main .content form input,
+main .content form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1a2e;
+    color: #ffffff;
+}
+
+main .content form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+main .content form button:hover {
+    background-color: #0077cc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1a1a2e;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+}
